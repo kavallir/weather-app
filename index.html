@@ -3,29 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Weather</title>
 </head>
 <body>
+    <div class="app">
     <header>
-        <form action="">
-            <input type="search" placeholder="Enter a city..." required />
-            <input type="submit" value="search"/>
+        <form action="" class="search-form">
+            <input type="search" placeholder="Enter a city..." required class="search-form-input" />
+            <input type="submit" value="search" class="search-form-button"/>
         </form>
     </header>
     <main>
-    <h1>Paris</h1>
-    <div></div>
-    <p>
-        Tuesday 14:58, overcast clouds <br/>
-Humidity: 68%, Wind: 5.66km/h
+        <div class="weather-app-data">
+        <div>
+    <h1 class="weather-app-city">Paris</h1>
+    <p class="weather-app-details">
+       <span class="parameters-color">Tuesday 14:58</span> , overcast clouds <br/>
+Humidity: <span class="parameters-color">68%</span>, Wind: <span class="parameters-color">5.66km/h</span>
     </p>
 </div>
-    <div>
-    🌤️ 12°C
+    <div class="weather-app-container">
+    <div class="weather-app-icon">🌤️</div> 
+    <div class="weather-app-temperature">12</div> 
+    <div class="weather-app-unit">°C</div> 
+</div>
 </div>
 </main>
     <footer>This project was coded by <a href="https://github.com/kavallir" target="_blank"> Valeriia Kovalova</a>,
         is <a href="https://github.com/kavallir/weather-app" target="_blank">open-sourced on GitHub</a> and
         <a href="https://goodweatherwebapp.netlify.app/" target="_blank"> hosted on Netlify</a></footer>
-</body>
+    </div>
+    </body>
 </html>
