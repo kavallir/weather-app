@@ -38,6 +38,11 @@ a {
     border-radius: 6px;
     font-size: 16px;
     margin-left: 5px;
+    transition: all 150ms ease-in-out;
+}
+.search-form-button:hover {
+    background-color: #5d6982;
+    cursor: pointer;
 }
 main {
     padding: 30px 0;
